@@ -1,0 +1,142 @@
+﻿/* Estilo General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Fondo azul claro */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0077b6; /* Azul más oscuro para el fondo */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: slideIn 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: fadeInText 1.5s ease-out 0.5s;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: zoomIn 2s ease-out;
+}
+
+/* Sección Nosotros */
+.nosotros {
+    background-color: #99CCFF; /* Azul claro para el fondo de la sección */
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.section-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Estadísticas */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    animation: fadeInText 1.5s ease-out 1s;
+}
+
+.stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    animation: slideUp 1s ease-out;
+}
+
+    .stat h3 {
+        font-size: 40px;
+        color: #0077b6;
+        margin-bottom: 10px;
+    }
+
+    .stat p {
+        font-size: 18px;
+        color: #555;
+    }
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,131 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="Currier.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <style>
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro suave para el fondo */
+}
+
+header {
+    padding: 10px 20px;
+    background-color: #77a4f5; /* Azul más oscuro para el encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+.company-name {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px; /* Reducir el espacio entre el logo y el nombre */
+}
+
+.login-link {
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-link:hover {
+    background-color: #004080;
+    color: white;
+}
+
+nav {
+    background-color: #337ee6; /* Azul oscuro para el fondo del menú */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #0055a4;
+    color: white;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <header>
+        <div class="logo-container">
+            <div class="logo-text">
+                <img src="imagenes/fondo.png" alt="Logo" class="logo">
+                <span class="company-name">OCEAN BLUE EXPRESS</span>
+            </div>
+            <a href="https://localhost:44340/Content/login" class="login-link">Iniciar sesión</a>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu" style="font-weight: bold">
+            <li><a href="https://localhost:44340/About">Inicio</a></li>
+            <li><a href="https://localhost:44340/Content/servicios">Servicios</a></li>
+            <li><a href="https://localhost:44340/Content/seguimiento">Seguimiento</a></li>
+            <li><a href="https://localhost:44340/Content/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+        <!-- Contenido principal -->
+        <div class="container" style="padding: 20px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <!-- Pie de página -->
+        <footer>
+            © 2025 Ocean blue express. Todos los derechos reservados.
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿/* Estilos generales para la página de registro */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario de registro */
+.register-title {
+    text-align: center;
+    color: #3366FF;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para los labels */
+.form-label {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Estilo para los campos de texto */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Estilo para los botones */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #3366FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #254f99;
+    }
+
+/* Estilo para el footer */
+.register-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Estilo para el enlace de login */
+.register-link {
+    color: #3366FF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+    .register-link:hover {
+        text-decoration: underline;
+    }
+
+/* Estilo para el mensaje de error o éxito */
+.message-label {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
