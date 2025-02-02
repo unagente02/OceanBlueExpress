@@ -1,0 +1,8 @@
+Factura de Envío
+------------------
+Nombre Remitente: Disleydi
+Nombre Destinatario: Camila 
+Dirección: Carretera duarte k7
+Descripción del Paquete: jugos
+------------------
+Gracias por usar Ocean Blue Express.
